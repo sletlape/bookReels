@@ -1,5 +1,5 @@
 import { Text, View, TextInput, Pressable } from "react-native";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import { router } from "expo-router";
 import { useState } from "react";
 

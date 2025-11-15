@@ -1,7 +1,7 @@
 import { View, ScrollView, Pressable, Text } from "react-native";
 import ProfileHeader from "../../components/ProfileHeader";
 import Badges from "../../components/Badges";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 
 export default function Profile() {
   const { logout } = useAuth();
