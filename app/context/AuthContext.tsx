@@ -1,5 +1,4 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useRouter, useSegments } from 'expo-router';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 type AuthContextType = {
   isAuthenticated: boolean;
@@ -11,18 +10,6 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const router = useRouter();
-  const segments = useSegments();
-
-  useEffect(() => {
-    const inAuthGroup = segments[0] === '(auth)';
-
-    if (isAuthenticated && inAuthGroup) {
-      router.replace('/(tabs)/home');
-    } else if (!isAuthenticated && !inAuthGroup) {
-      router.replace('/(auth)/login');
-    }
-  }, [isAuthenticated, segments]);
 
   const login = () => {
     setIsAuthenticated(true);
