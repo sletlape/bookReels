@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user1",
+    "username": "Bookworm_Babe",
+    "email": "babe@example.com",
+    "avatarUrl": "https://picsum.photos/seed/user1/200/200",
+    "streak": 15,
+    "progress": [
+      {
+        "bookId": "book1",
+        "lastSectionId": "b1s2",
+        "percentage": 66
+      }
+    ]
+  }
+]

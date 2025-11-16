@@ -1,0 +1,7 @@
+[
+  { "id": "b1", "name": "Early Bird", "icon": "coffee" },
+  { "id": "b2", "name": "Night Owl", "icon": "moon-o" },
+  { "id": "b3", "name": "Bookworm", "icon": "book" },
+  { "id": "b4", "name": "Consistent Reader", "icon": "star" },
+  { "id": "b5", "name": "Commentator", "icon": "comment" }
+]

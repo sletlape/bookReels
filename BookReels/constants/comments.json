@@ -1,0 +1,15 @@
+[
+  {
+    "id": "c1",
+    "sectionId": "b1s1",
+    "userId": "user1",
+    "content": "This is such a powerful opening line!"
+  },
+  {
+    "id": "c2",
+    "sectionId": "b1s1",
+    "userId": "user2",
+    "content": "I completely agree. It sets the tone for the entire book.",
+    "parentId": "c1"
+  }
+]
